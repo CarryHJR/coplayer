@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>Bonnie Love CarryHJR</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/willesPlay.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/willesPlay.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div style="display: none"><img src="images/preview.jpg" style="position: absolute; top: 0; left: 0;" /></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="willesPlay">
+
+                    <div class="playHeader">
+                        <div class="videoName">睡前时光</div>
+                    </div>
+                    <div class="playContent">
+                        <div class="turnoff">
+                            <ul>
+                                <li><a href="javascript:;" title="喜欢" class="glyphicon glyphicon-heart-empty"></a></li>
+                                <li><a href="javascript:;" title="关灯" class="btnLight on glyphicon glyphicon-sunglasses"></a></li>
+                                <li><a href="javascript:;" title="分享" class="glyphicon glyphicon-share"></a></li>
+                            </ul>
+                        </div>
+                        <video width="100%" height="100%" id="playVideo" x5-playsinline="" playsinline="" webkit-playsinline="">
+                            <source src="video/test.mp4" autoplay muted type="video/mp4">
+                            </source>
+                            当前浏览器不支持 video直接播放，点击这里下载视频：<a href="/">下载视频</a> </video>
+                        <div class="playTip glyphicon glyphicon-play"></div>
+                    </div>
+                    <div class="playControll">
+                        <div class="playPause playIcon"></div>
+                        <div class="timebar"> <span class="currentTime">0:00:00</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                            </div>
+                            <span class="duration">0:00:00</span>
+                        </div>
+                        <div class="otherControl"> <span class="volume glyphicon glyphicon-volume-down"></span> <span class="fullScreen glyphicon glyphicon-fullscreen"></span>
+                            <div class="volumeBar">
+                                <div class="volumewrap">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 8px;height: 40%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
